@@ -11,7 +11,6 @@ app.get('/', (req, res) => {
     res.send("hii");
 });
 
-//if multiple same route is using it
 app.route('/api/users/:id')
 .get((req, res) => {
     const id = Number(req.params.id);
