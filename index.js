@@ -1,3 +1,4 @@
+console.log('hi');
 const express = require('express');
 const users = require('./MOCK_DATA.json');
 
@@ -7,10 +8,9 @@ const PORT = 8000;
 app.listen(PORT, () => console.log(`Server is running at port ${PORT}`));
 
 app.get('/', (req, res) => {
-    console.log("in route");
-    res.send("hii");
+    res.send("Hi Upasana");
 });
-
+ 
 app.route('/api/users/:id')
 .get((req, res) => {
     const id = Number(req.params.id);
